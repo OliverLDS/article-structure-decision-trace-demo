@@ -44,3 +44,27 @@ risk, cost, or the safe fraction of decisions that could become local. Those
 claims require a frozen label catalog, accepted-decision or outcome labels,
 chronological holdout evaluation, threshold calibration, and prospective
 monitoring of deferrals and overrides.
+
+## Reproduce the aggregate results locally
+
+Run these commands from the `zl_agentr` root with the local LitXR data available.
+The first command uses the existing model evaluator, which reads its own
+configured structure and completed-article logs. The second uses the existing
+evaluating-period CSV exporter. The third reduces the two raw JSONL logs and
+that CSV to aggregate counts. Keep the per-record CSV and JSONL logs local.
+
+```sh
+Rscript human/scripts/evaluate_article_structure_classifier.R \
+  --cutoff-date 2026-09-01 --plan-type all \
+  --output-summary /tmp/article-structure-offline.json
+Rscript human/scripts/export_article_structure_evaluation_csv.R \
+  --output-path /tmp/article-structure-live.csv
+Rscript exhibits/article_structure_decision_trace_demo/analysis/summarize_traces.R \
+  tasks/write_new_blog_article/state/article_structure_plan_log.jsonl \
+  tasks/revise_existing_blog_article/state/article_structure_plan_log.jsonl \
+  /tmp/article-structure-live.csv /tmp/article-structure-traces.json
+```
+
+The published snapshot was checked on 2026-11-12. Later log growth or a
+revised classifier may change the results; the dated JSON files are not a
+live dashboard.

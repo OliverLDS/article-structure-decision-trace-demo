@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "record_count": 2681,
+  "invalid_jsonl_lines": 0,
+  "workflow_counts": {
+    "revise_existing_blog_article": 1578,
+    "write_new_blog_article": 1103
+  },
+  "decision_period_counts": {
+    "unrecorded": 1749,
+    "learning": 925,
+    "evaluating": 7
+  },
+  "plan_type_counts": {
+    "single_source": 2586,
+    "multi_source": 95
+  },
+  "selected_label_counts": {
+    "mechanism-first": 1801,
+    "evidence-first": 359,
+    "comparison-based": 298,
+    "complementary_logic_chain": 82,
+    "case-first": 70,
+    "category-based": 51,
+    "shared_high_level_insight": 13,
+    "timeline/story-first": 7
+  },
+  "live_evaluation": {
+    "record_count": 7,
+    "matches": 2,
+    "mismatches": 5,
+    "confidence_median": 0.9999,
+    "mismatch_confidence_median": 1
+  }
+}

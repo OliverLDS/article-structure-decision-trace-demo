@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "evaluations": {
+    "single_source": {
+      "plan_type": "single_source",
+      "cutoff_date": "2026-09-01",
+      "train_records": 383,
+      "test_records": 586,
+      "train_label_counts": {
+        "case-first": 3,
+        "category-based": 7,
+        "comparison-based": 45,
+        "evidence-first": 52,
+        "mechanism-first": 276
+      },
+      "test_label_counts": {
+        "case-first": 21,
+        "category-based": 5,
+        "comparison-based": 81,
+        "evidence-first": 221,
+        "mechanism-first": 257,
+        "timeline/story-first": 1
+      },
+      "model_metrics": {
+        "majority": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M0_unigram_counts_nnet_multinom": {
+          "accuracy": 0.4044,
+          "balanced_accuracy": 0.1877
+        },
+        "M0_unigram_counts_glmnet_ridge": {
+          "accuracy": 0.4454,
+          "balanced_accuracy": 0.1717
+        },
+        "M0_unigram_counts_glmnet_elastic_net": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M0_unigram_counts_glmnet_lasso": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M1_tfidf_unigram_bigram_nnet_multinom": {
+          "accuracy": 0.3703,
+          "balanced_accuracy": 0.197
+        },
+        "M1_tfidf_unigram_bigram_glmnet_ridge": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M1_tfidf_unigram_bigram_glmnet_elastic_net": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M1_tfidf_unigram_bigram_glmnet_lasso": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M4_tfidf_shape_nnet_multinom": {
+          "accuracy": 0.3652,
+          "balanced_accuracy": 0.1802
+        },
+        "M4_tfidf_shape_glmnet_ridge": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M4_tfidf_shape_glmnet_elastic_net": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M4_tfidf_shape_glmnet_lasso": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M5_tfidf_shape_neighbors_nnet_multinom": {
+          "accuracy": 0.3567,
+          "balanced_accuracy": 0.1771
+        },
+        "M5_tfidf_shape_neighbors_glmnet_ridge": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M5_tfidf_shape_neighbors_glmnet_elastic_net": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        },
+        "M5_tfidf_shape_neighbors_glmnet_lasso": {
+          "accuracy": 0.4386,
+          "balanced_accuracy": 0.1667
+        }
+      }
+    },
+    "multi_source": {
+      "plan_type": "multi_source",
+      "cutoff_date": "2026-09-01",
+      "train_records": 78,
+      "test_records": 4,
+      "train_label_counts": {
+        "complementary_logic_chain": 66,
+        "shared_high_level_insight": 12
+      },
+      "test_label_counts": {
+        "complementary_logic_chain": 4
+      },
+      "model_metrics": {
+        "majority": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M0_unigram_counts_nnet_multinom": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M0_unigram_counts_glmnet_ridge": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M0_unigram_counts_glmnet_elastic_net": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M0_unigram_counts_glmnet_lasso": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M1_tfidf_unigram_bigram_nnet_multinom": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M1_tfidf_unigram_bigram_glmnet_ridge": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M1_tfidf_unigram_bigram_glmnet_elastic_net": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M1_tfidf_unigram_bigram_glmnet_lasso": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M4_tfidf_shape_nnet_multinom": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M4_tfidf_shape_glmnet_ridge": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M4_tfidf_shape_glmnet_elastic_net": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M4_tfidf_shape_glmnet_lasso": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M5_tfidf_shape_neighbors_nnet_multinom": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M5_tfidf_shape_neighbors_glmnet_ridge": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M5_tfidf_shape_neighbors_glmnet_elastic_net": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        },
+        "M5_tfidf_shape_neighbors_glmnet_lasso": {
+          "accuracy": 1,
+          "balanced_accuracy": 1
+        }
+      }
+    }
+  }
+}
