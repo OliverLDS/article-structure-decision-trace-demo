@@ -1,0 +1,25 @@
+date,title,abstract,llm_structure,completed
+2026-01-01,Sparse routing mechanism,A router chooses a small expert subset for each token,mechanism-first,TRUE
+2026-01-02,Hallucination benchmark audit,Evaluation reveals a failure in citation grading,evidence-first,TRUE
+2026-01-03,Two retrieval strategies,Compare graph search with vector search on factual queries,comparison-based,TRUE
+2026-01-04,Adaptive memory mechanism,A memory gate retains useful state during long tasks,mechanism-first,TRUE
+2026-01-05,Visual reasoning evaluation,Benchmark tests expose failures on spatial relations,evidence-first,TRUE
+2026-01-06,Agent planner comparison,Compare planning with reactive execution across tasks,comparison-based,TRUE
+2026-01-07,Selective attention routing,An attention mechanism routes compute to relevant tokens,mechanism-first,TRUE
+2026-01-08,Reward model benchmark,Evaluation of reward models finds label noise and bias,evidence-first,TRUE
+2026-01-09,Context window alternatives,Compare compression with retrieval for long context,comparison-based,TRUE
+2026-01-10,Causal feature mechanism,A causal encoder separates stable and spurious signals,mechanism-first,TRUE
+2026-01-11,Robustness evaluation,Benchmark results show transfer failures after perturbation,evidence-first,TRUE
+2026-01-12,Training method comparison,Compare offline training and online adaptation,comparison-based,TRUE
+2026-01-13,Tool-use control mechanism,A controller routes tool calls through a validation gate,mechanism-first,TRUE
+2026-01-14,Medical QA benchmark,Evaluation measures factual errors under evidence gaps,evidence-first,TRUE
+2026-01-15,Embedding model alternatives,Compare dense and sparse embeddings for retrieval,comparison-based,TRUE
+2026-01-16,Multimodal fusion mechanism,A fusion module routes image and text evidence,mechanism-first,TRUE
+2026-01-17,Agent safety evaluation,Benchmark tests reveal unsafe action sequences,evidence-first,TRUE
+2026-01-18,Reasoning budget comparison,Compare fixed compute with adaptive sampling,comparison-based,TRUE
+2026-01-19,Inference router mechanism,A router selects compute paths for difficult requests,mechanism-first,TRUE
+2026-01-20,Scientific QA audit,Evaluation finds unsupported answers on new papers,evidence-first,TRUE
+2026-01-21,Memory design alternatives,Compare event memory with transcript replay,mechanism-first,TRUE
+2026-01-22,Planning state mechanism,A planner updates state after tool feedback,mechanism-first,TRUE
+2026-01-23,Verifier reliability benchmark,Evaluation detects false passes in grading,evidence-first,TRUE
+2026-01-24,RAG architecture comparison,Compare graph retrieval and dense retrieval,comparison-based,TRUE
